@@ -1,0 +1,54 @@
+{
+    "compilerOptions": {
+      "downlevelIteration": true,
+      "target": "es5",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react",
+      "strictPropertyInitialization": false,
+      "baseUrl": "./",
+        "paths": {
+            "app":["src/app"],
+            "app/*":["src/app/*"],
+            "api":["src/api"],
+            "api/*":["src/api/*"],
+            "components":["src/components"],
+            "components/*":["src/components/*"],
+            "context":["src/context"],
+            "context/*":["src/context/*"],
+            "hooks":["src/hooks"],
+            "hooks/*":["src/hooks/*"],
+            "images":["src/images"],
+            "images/*":["src/images/*"],
+            "layouts":["src/layouts"],
+            "layouts/*":["src/layouts/*"],
+            "models":["src/models"],
+            "models/*":["src/models/*"],
+            "redux-app":["src/redux"],
+            "redux-app/*":["src/redux/*"],
+            "schemas":["src/schemas"],
+            "schemas/*":["src/schemas/*"],
+            "router":["src/router"],
+            "router/*":["src/router/*"],
+            "services":["src/services"],
+            "services/*":["src/services/*"],
+            "views":["src/views"],
+            "views/*":["src/views/*"]
+          }
+    }
+  }
+  

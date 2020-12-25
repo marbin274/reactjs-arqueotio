@@ -1,0 +1,1 @@
+export { default } from 'layouts/Main/components/FabScrollTop/FabScrollTop';

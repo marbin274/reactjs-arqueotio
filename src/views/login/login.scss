@@ -1,0 +1,24 @@
+html,
+body,
+#root {
+    height: 100%;
+}
+.login {
+    background-color: #e2e1e1;
+    height: 100%;
+    &__contenedor {
+        padding-top: 4rem;
+        &__imagen {
+            width: 100%;
+        }
+        &__info {
+            margin-top: 1rem !important;
+            border-bottom: 15px solid #494848;
+            padding: 1rem 1rem 2.5rem 1rem;
+        }
+        &__footer {
+            padding-top: 30px;
+            color: #636262;
+        }
+    }
+}

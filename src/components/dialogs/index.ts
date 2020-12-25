@@ -1,0 +1,1 @@
+export { default as DialogGlobal } from 'components/dialogs/dialog-global/dialog-global';
