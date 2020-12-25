@@ -5,15 +5,15 @@ import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { Message, LoadingGlobal, DialogGlobal } from "components";
 import { Provider } from "react-redux";
 import store from "redux-app/store";
-import siagieThemeConfig from "app/siagie-theme-config";
+import arqueotypeThemeConfig from "app/arqueotype-theme-config";
 import { ReactQueryDevtools } from "react-query-devtools";
 
-const siagieTheme = createMuiTheme(siagieThemeConfig);
+const arqueotypeTheme = createMuiTheme(arqueotypeThemeConfig);
 
 function App() {
   return (
     <>
-      <ThemeProvider theme={siagieTheme}>
+      <ThemeProvider theme={arqueotypeTheme}>
         <Provider store={store}>
           <BrowserRouter>
             <Router />

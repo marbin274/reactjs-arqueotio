@@ -8,7 +8,6 @@ const Home = () => {
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <p>Arquetipo frontend - React JS</p>
-            <p><strong>MINEDU-USI</strong></p>
             <Link to="/login">Ingresar</Link>
         </header>
     </div>

@@ -16,15 +16,13 @@ import { loginSchema } from "views/login/schema.yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
-import logoMinedu from "images/login/logo-minedu.png";
-import logoSiagie from "images/login/logo-siagie.png";
 import { IRootReducer } from "redux-app/reducer";
 import { auth } from "redux-app/auth/actions";
 
 const GOOGLE_API: string = process.env.REACT_APP_GOOGLE_API as string;
 const requiredCaptcha: boolean =
   process.env.REACT_APP_REQUIRE_CAPTCHA === undefined ||
-  process.env.REACT_APP_REQUIRE_CAPTCHA === "true"
+    process.env.REACT_APP_REQUIRE_CAPTCHA === "true"
     ? true
     : false;
 
@@ -109,19 +107,15 @@ function Login() {
       <Container component="main" maxWidth="sm" className="login__contenedor">
         <Grid container spacing={4}>
           <Grid item xs={2}>
-            <img
-              src={logoSiagie}
-              alt=""
-              className="login__contenedor__imagen"
-            />
+            {
+              // TODO: add logo 1
+            }
           </Grid>
           <Grid item xs={4}></Grid>
           <Grid item xs={6}>
-            <img
-              src={logoMinedu}
-              alt=""
-              className="login__contenedor__imagen"
-            />
+            {
+              // TODO: add logo 2
+            }
           </Grid>
         </Grid>
         <Grid
@@ -132,11 +126,10 @@ function Login() {
         >
           <Grid item xs={12}>
             <Typography variant="h4" color="primary" align="center">
-              Bienvenido al SIAGIE
+              Bienvenido
             </Typography>
             <Typography variant="body2" align="center">
-              Sistema de Información de Apoyo a la Gestión de la Institución
-              Educativa
+              Arqueotipo de proyectos
             </Typography>
           </Grid>
           <Container component="section" className="login__form" maxWidth="xs">
@@ -214,8 +207,6 @@ function Login() {
           <Grid item xs={12}>
             <Typography variant="caption" component="p" align="center">
               © 2020 Todos los derechos reservados.
-              <br />
-              Ministerio de Educación. Versión 1.0
             </Typography>
           </Grid>
         </Grid>

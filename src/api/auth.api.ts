@@ -4,7 +4,7 @@ export type AuthApiLoginProps = { username: string; password: string };
 
 export class AuthApi {
   static async login(params: AuthApiLoginProps) {
-    const firebaseKey = process.env.APP_FIREBASE_APÍ_KEY;
+    const firebaseKey = process.env.REACT_APP_FIREBASE_API_KEY;
     return await axiosPublic.post<LoginSingInType>(
       `/v1/accounts:signInWithPassword?key=${firebaseKey}`,
       {
